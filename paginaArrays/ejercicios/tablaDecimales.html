@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabla de Decimales | Paz Ruiz García </title>
+	<meta name="keywords" content="Web,diw,Paz Ruiz,iesgc,daw" />
+	<meta name="description" content="tablaDecimales" />
+	<link href="../css/estilos.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/tablaDecimales.js"></script>
+<head>	
+<body>
+	<noscript>
+		<h1>JavaScript desactivado</h1>
+		<p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+		<p>Para activarlo, revise el panel de configuración de su navegador.</p>
+	</noscript>
+	<div class="nav">
+		<div class="container">
+			<a class="barra" href="#">Tabla de Decimales</a>
+		</div>
+	</div>
+	<div id="contenedor">
+		<div id="principal">
+			<h1>Tabla de Decimales</h1>
+			<p>Crea la página tablaDecimales.html que cree una matriz de decimales. Pide las dimensiones (filas y columnas). Se inicializa con valores aleatorios entre 1 y 100. Visualiza el array, localiza los valores máximo y mínimo y muestra tanto estos valores como la posición que ocupan en la matriz.</p>
+
+			<form name="form" action="javascript:mostrarMatriz()">
+				<p>Introduzca números positivos (entre 1 y 10)</p>
+				<div class="label">
+					<label for='filas'>Número de filas</label>
+					<input type='number' id='filas' name='filas' min=1 max=10 placeholder='min 1' required></br>
+		
+				</div>
+				<div class="label">
+					<label for='columnas'>Número de columnas</label>
+					<input type='number' id='columnas' name='columnas' min=1 max=10 placeholder='min 1' required></br>
+				</div>
+					<input type='submit' name='enviar' value='Enviar'>
+			</form>
+			<div id='resultado'></div>
+				<br/>
+				<a href='../ejercicios.html'><button type='button'>Volver al listado de ejercicios</button></a>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

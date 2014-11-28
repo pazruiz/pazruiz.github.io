@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Suma matrices | Paz Ruiz García </title>
+	<meta name="keywords" content="Web,diw,Paz Ruiz,iesgc,daw" />
+	<meta name="description" content="sumaMatrices" />
+	<link href="../css/estilos.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/sumaMatrices.js"></script>
+<head>	
+<body>
+	<noscript>
+		<h1>JavaScript desactivado</h1>
+		<p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+		<p>Para activarlo, revise el panel de configuración de su navegador.</p>
+	</noscript>
+	<div class="nav">
+		<div class="container">
+			<a class="barra" href="#">Suma Matrices</a>
+		</div>
+	</div>
+	<div id="contenedor">
+		<div id="principal">
+			<h1>Suma de matrices</h1>
+			<p>Introduzca las dimensiones para crear dos matrices de enteros. Sus valores se inicializarán con valores aleatorios entre 0 y 10.</p>
+			<p>Se mostrarán los sumandos y la suma resultante.</p>
+
+			<form name="form" action="javascript:mostrarResultado()">
+				<div class="label">
+					<label for="filas">Filas de las matrices</label>
+					<input type="number" id="filas" name="filas" min=1 max=100 placeholder="(mín. 1, máx. 100)" size="100" required><br/>
+					<label for="columnas">Columnas de las matrices</label>
+					<input type="number" id="columnas" min="1" max="20" placeholder="(mín. 1, máx. 20)" size="100" required>
+					</br>
+					<input type='submit' name='enviar' value='Sumar'>
+				</div>
+			</form>
+			<div id='resultado'></div>
+				<br/>
+				<a href='../ejercicios.html'><button type='button'>Volver al listado de ejercicios</button></a>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
