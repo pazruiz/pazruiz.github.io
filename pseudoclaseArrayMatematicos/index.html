@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Web,diw,Paz Ruiz,iesgc,daw" />
+    <meta name="description" content="pila en JavaScript" />
+	<title>PseudoClase ArrayMatemáticos | Paz Ruiz García</title>
+  
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <noscript>
+    <h1>JavaScript desactivado</h1>
+    <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+    <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+  </noscript>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+      	     <div class="navbar-header">
+        		<a class="navbar-brand" href="index.html">Paz Ruiz</a>
+      	     </div>
+      	     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		    <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">PseudoClase ArrayMatemáticos</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+         	<div  class="jumbotron text-justify">
+                <div id="enunciado" class"collapse">
+    		        <h1>ArrayMatemáticos</h1>
+                    <p>Mediante prototype, agrega los métodos sumar, restar, trasponer y multiplicar a la clase ArraysMatematicos. Recuerda que el estado de un array deberían de ser los elementos.</p>
+                    <p>Recuerda las restricciones y posibilidades de un Array:</p>
+                    <ol>
+                        <li>Sobre las dimensines de los arrays implicados (unidimensional, bidimensional...)</li>
+                        <li>Sobre las longitudes de los arrays implicados (1 en adelante)</li>
+                        <li>Sobre los contenidos de los arrays implicados (numéricos)</li>
+                        <li>Podemos rellenar un Array con valores aleatorios o directamente desde teclado.</li>
+                    </ol>
+                    <p>Una vez creada la clase, demuestra su funcionamiento en una página bien diseñada. Evita las cajas de texto y hazla lo más dinámica posible.</p>
+                </div>
+            </div>   
+    	</div>
+    
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div id="error" class="lead text-danger text-center"></div>
+        </div>
+        <div class="col-md-6 col-md-offset-3 well well-lg">
+            <article>  
+                <h3>Matriz 1</h3>
+                <label for="filas1" class="col-sm-2 control-label">Filas</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control input-sm" id="filas1" min="1" max="20" placeholder="Mín=1,Máx=20"required >
+                </div>           
+
+                <label for="columnas1" class="col-sm-2 control-label">Columnas</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control input-sm" id="columnas1" min="1" max="20" placeholder="Mín=1,Máx=20" required>
+                </div>
+                <br>
+                <h3>Matriz 2</h3>         
+                <label for="filas2" class="col-sm-2 control-label">Filas</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control input-sm" id="filas2" required min="1" max="20" placeholder="Mín=1,Máx=20" required>
+                </div>
+
+                <label for="columnas2" class="col-sm-2 control-label">Columnas</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control input-sm" id="columnas2" min="1" max="20" placeholder="Mín=1,Máx=20" required>
+                </div>
+                <br>
+                <hr> 
+                <div class="text-center">
+                    <div class="btn-group">
+                        <button type="sumar" onclick="validaYSuma()" class="btn btn-success btn-md">Sumar</button>
+                        <button type="restar" onclick="validaYResta()" class="btn btn-success btn-md">Restar</button>
+                        <button type="multiplicar" onclick="validaYMultiplica()" class="btn btn-success btn-md">Multiplicar</button>
+                        <button type="trasponer" onclick="validaYTraspone()" class="btn btn-success btn-md">Trasponer</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <div id="matriz1" class="lead text-center"></div>
+        </div>
+            
+        <div class="col-md-6">
+            <div id="matriz2" class="lead text-center"></div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-3 ">
+            <div id="resultado" class="lead text-center"></div>
+        </div>
+    </div>
+
+    <footer class="row">
+        <h5 class=" text-center"><span >Paz Ruiz García | 2DAW | 2014/15</span></h5>
+    </footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="jsb/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ArrayMatematicos.js"></script>
+    <script type="text/javascript" src="js/validacion.js"></script>
+</body>
+</html>

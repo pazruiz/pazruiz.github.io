@@ -1,0 +1,125 @@
+body {
+	margin-top: 50px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #737373;
+
+}
+header {
+	overflow: hidden;
+	width: 920px;
+	padding: 0px 40px;
+}
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Englebert', sans-serif;
+	color: #000;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 35px;
+	color: #8B2287;
+}
+
+p, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 180%;
+}
+
+a {
+	color: #8C2287;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#contenedor {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/*--------- LOGO ---------*/
+
+
+
+/*---------- PRINCIPAL ----------*/
+
+#principal {
+	overflow: hidden;
+	background: #FFFFFF;
+	width: 600px;
+	margin: 0px auto;
+}
+
+
+/*--------- CONTENIDO ---------*/
+
+#contenido {
+	float: left;
+	width: 600px;
+	text-align: justify;
+}
+
+
+
+/*-----------------------FORMULARIO------------------*/
+[required] {
+	border-color:green;
+	box-shadow: 0px 0px 5px green;
+	-webkit-box-shadow: 0px 0px 5px green;
+	-ms-box-shadow: 0px 0px 5px green;
+}
+
+:invalid {
+border-color:red;
+box-shadow: 0px 0px 50px red;
+-webkit-box-shadow: 0px 0px 50px red;
+-ms-box-shadow: 0px 0px 50px red;
+
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-ms-border-radius: 5px;
+}
+
+
+form {
+	font-family:'Open Sans', sans-serif;
+}
+
+fieldset {
+	float: left;
+	width: 60%;
+	font-family: 'Englebert', sans-serif;
+	font-size: 15px;
+	border: 1px solid #8C2287;
+	border-radius: 20px;
+	padding: 25px;
+}
+
+form input, form textarea {
+	color: #444444;
+	font-size:12px;
+	font-family:'Open Sans', sans-serif;
+	border: 1px solid rgba(140,34,135,1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	-ms-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	transition: background 1s, box-shadow: :; border 1s;
+	-webkit-transition: background 1s, -webkit-box-shadow: 1s; border 1s;
+	-ms-transition: background 1s, -webkit-box-shadow: 1s; border 1s;
+}
+
+form input:hover, form textarea:hover {
+	background:#fee21c;
+	border: 1px solid #8C2287;
+}

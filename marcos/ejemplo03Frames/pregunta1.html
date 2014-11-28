@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Pregunta 1</title>
+	<script type="text/javascript">
+		function responder(){
+			var valor = window.parent.extraeValor();
+			if (valor==0) {
+				alert ("Debe elegir una respuesta");
+			} else {
+				window.parent.respuestas[0] = valor;
+				window.location = "pregunta2.html";
+			}	
+		}
+	</script>
+<head>
+<body bgcolor="#ff8833">
+	<noscript>
+		<h1>JavaScript desactivado</h1>
+		<p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+		<p>Para activarlo, revise el panel de configuración de su navegador.</p>
+	</noscript>
+
+	<h2>Pregunta 1: ¿Te gusta hacer regalos?</h2>
+	<form name=f1>
+		<input type=radio value="No, sólo los hago en situaciones especiales" name="respuesta"> No, sólo los hago en situaciones especiales
+		<br>
+		<input type=radio value="Si, me encanta" name="respuesta"> Si, me encanta
+		<br>
+		<input type=radio value="No y además nunca regalo nada" name="respuesta"> No y además nunca regalo nada
+		<br>
+		<input type="button" value="Responder" onClick="responder()">
+	</form>
+</body>
+</html>

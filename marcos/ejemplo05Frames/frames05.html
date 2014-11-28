@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 5. Control de frames | Paz Ruiz García </title>
+	<meta name="keywords" content="Web,diw,Paz Ruiz,iesgc,daw" />
+	<meta name="description" content="controldeframes" />
+	<script type="text/javascript">
+		if (window.innerHeight){
+			//navegadores basados en mozilla
+			espacio_iframe = window.innerHeight - 110;
+		} else {
+			if (document.body.clientHeight) {
+				//Navegadores basados en IExplorer, es que no tengo innerheight
+				espacio_iframe = document.body.clientHeight - 110;
+			} else {
+				//otros navegadores
+				espacio_iframe = 478;
+			}
+		}
+		//Se escriben las etiquetas iframe con los datos obtenidos
+		document.write ('<iframe frameborder="0" src="mipagina.html" width="770" height="' + espacio_iframe + '">');
+		document.write ('</iframe>');
+	</script>
+</head>
+<body>
+	<noscript>
+		<h1>JavaScript desactivado</h1>
+		<p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+		<p>Para activarlo, revise el panel de configuración de su navegador.</p>
+		<iframe frameborder="0" src="mipagina.html" width="770" height="478"></iframe>
+	</noscript>
+</body>
+</html>

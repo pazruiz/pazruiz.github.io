@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Pregunta 3</title>
+	<script type="text/javascript">
+		function responder(){
+			var valor = window.parent.extraeValor();
+			if (valor==0) {
+				alert ("Debe elegir una respuesta");
+			} else {
+				window.parent.respuestas[2] = valor;
+				window.location = "resultado.html";
+			}	
+		}
+	</script>
+<head>
+<body bgcolor="#ff8833">
+	<noscript>
+		<h1>JavaScript desactivado</h1>
+		<p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+		<p>Para activarlo, revise el panel de configuración de su navegador.</p>
+	</noscript>
+
+	<h2>Pregunta 3: ¿Como cuanto ahorras de tu sueldo mensual?</h2>
+	<form name="f1">
+		<input type=radio value="Me lo gasto todo cada mes" name="respuesta"> Me lo gasto todo cada mes
+		<br>
+		<input type=radio value="Como mucho un 20%" name="respuesta"> Como mucho un 20%
+		<br>
+		<input type=radio value="Ahorro casi el 90%" name="respuesta"> Ahorro casi el 90%
+		<br>
+		<input type="button" value="Responder" onClick="responder()">
+	</form>
+</body>
+</html>
