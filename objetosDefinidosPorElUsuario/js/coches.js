@@ -60,9 +60,9 @@ function generaTabla() {
 	  // Añade <table> dentro de <body>
 	  resultado.appendChild(tabla);
 	  // modifica el ancho de la tabla y lo fija en 50%
-	  tabla.setAttribute("width", "50%");
+	  tabla.className = "table table-striped";
 	  // modifica el atributo "border" de la tabla y lo fija a "2";
-	  tabla.setAttribute("border", "2");
+	  //tabla.setAttribute("border", "2");
 }
 
 window.onload = function() {
