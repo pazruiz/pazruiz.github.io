@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Web,diw,Paz Ruiz,iesgc,daw" />
+    <meta name="description" content="pila en JavaScript" />
+	<title>Pila en JavaScript | Paz Ruiz García</title>
+    <script type="text/javascript" src="js/pila.js"></script>
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <noscript>
+    <h1>JavaScript desactivado</h1>
+    <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+    <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+  </noscript>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+      	     <div class="navbar-header">
+        		<a class="navbar-brand" href="index.html">Paz Ruiz</a>
+      	     </div>
+      	     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		    <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Pila</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+         	<div  class="jumbotron text-justify">
+                <div id="enunciado" class"collapse">
+    		        <h1>Pila en JavaScript</h1>
+                    <p>Implementa las operaciones básicas de una estructura de datos pila (stack). Recuerda que una pila es una estructura LIFO donde el último elemento en entrar es el primero en salir. Los métodos y atributos a implementar son:</p>
+                    <ul>
+                        <li>Introducir elemento en la pila apilar(elemento)</li>
+                        <li> Sacar elemento de la pila extraer() que devuelva el objeto.</li>
+                        <li>Cima de la pila, que devuelve el elemento de la cima de la pila. (cima())</li>
+                        <li>Propiedad cima de la pila, que siempre almacenará el último elemento.</li>
+                    </ul>
+                    <p>En la clase Array de JavaScript implementa los métodos necesarios de manera eficiente (prototype), y recuerda hacer las pruebas precisas. Para ello crea una pila mediante formularios donde se añadan elementos del tipo Persona (nombre, apellidos, DNI y mostrar en una ventana nueva (mostrar())) y se invoquen a todos los métodos.</p>
+                    <p>La interacción con el usuario se realizará a base de formularios lo más amigables posible.</p>
+                </div>
+            </div>   
+    	</div>
+    
+    <div class="row">
+            <div class="col-md-4 col-md-offset-4 well well-lg">
+                <article>
+                    <div id="error" class="lead text-danger text-center"></div>
+                    <form class="form-horizontal" role="form" name="formulario">
+                        <div class="form-group">
+                            <label for="nombre" class="control-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required placeholder="Ejemplo: Pepe">
+                            <label for="apellidos" class=" control-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos"  required placeholder="Ejemplo: Pérez">
+                            <div id="group-dni">
+                                <label for="dni" class=" control-label">DNI</label>
+                                <input type="text" class="form-control" id="dni" placeholder="00000000G" maxlength="10">
+                                <strong><div id="error_dni" class="lead text-danger text-center"></div></strong>
+                            </div>
+                            <div id="group-error">
+                                <strong><div id="error" class="lead text-danger text-center"></div></strong>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg btn-block" id="apilar" onclick="crearPersona()">Añadir Persona</button>
+                                <button type="submit" class="btn btn-success btn-lg btn-block" id="mostrar" onclick="verPila()">Ver Personas</button>
+                       </div>
+                    </form>
+               </article>
+
+
+            </div>
+        </div>
+    <footer class="row">
+        <h5 class=" text-center"><span >Paz Ruiz García | 2DAW | 2014/15</span></h5>
+    </footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="jsb/bootstrap.min.js"></script>
+    
+</body>
+</html>
