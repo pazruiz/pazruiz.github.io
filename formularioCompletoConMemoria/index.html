@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Web,diw,Paz Ruiz,iesgc,daw" />
+    <meta name="description" content="formulario" />
+	<title>Formulario Completito con memoria | Paz Ruiz García</title>
+  
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+  <noscript>
+    <h1>JavaScript desactivado</h1>
+    <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+    <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+  </noscript>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+      	     <div class="navbar-header">
+        		<a class="navbar-brand" href="index.html">Paz Ruiz</a>
+      	     </div>
+      	     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		    <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Formulario Completito con memoria</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+         	<div  class="jumbotron text-justify">
+                <div id="enunciado" class"collapse">
+    		        <h1>Formulario Completito con memoria</h1>
+                    <p>Crea un formulario con todos los tipos de controles y realiza todas las validaciones posibles mediante JavaScript.</p>
+                    <p>Utiliza el modelo de registro avanzado de eventos según W3C (addEventListener), así como las expresiones regulares.</p>
+                    <p>Asegúrate de validar lo siguiente:</p>
+                    <ul>
+                        <li>Obligatoriedad (campo de texto, opción seleccionada (checkbox, radio button y selección)</li>
+                        <li>Tipo de dato introducido (numérico...)</li>
+                        <li>Dirección de correo válida</li>
+                        <li>Número de DNI válido</li>
+                        <li>Fecha válida</li>
+                        <li>Número de teléfono</li>
+                        <li>Número de cuenta corriente</li>
+                        <li>URL</li>
+                    </ul>
+                    <p>Asegúrate de que:</p>
+                    <ol>
+                        <li>Al perder el foco de cada control se comprueba su validación.</li>
+                        <li>Los errores los muestras mediante css.</li>
+                        <li>Al enviar el formulario se realizan TODAS LAS VALIDACIONES, yéndose el foco al primer error.</li>
+                    </ol>
+                    <p>Procura aislar las validaciones del interfaz del usuario (arquitectura de tres capas)</p>
+                </div>
+            </div>   
+    	</div>
+    
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 well well-lg">
+                <article>
+                    <form class="form-horizontal" role="form" name="formulario" onsubmit="return validar();">
+                        <div class="form-group">
+                            <div id="group-obligatorio">
+                                <label for="obligatorio" class="control-label">Campo obligatorio</label>
+                                <input type="text" class="form-control" id="obligatorio" required placeholder="Debe rellenar este campo obligatoriamente." autofocus="on">
+                                <strong><div id="error_obligatorio" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-entero">
+                                <label for="entero" class="control-label">Número entero</label>
+                                <input type="text" class="form-control" id="entero" placeholder="Introduzca un número entero.">
+                                <strong><div id="error_entero" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-decimal">
+                                <label for="decimal" class="control-label">Número decimal</label>
+                                <input type="text" class="form-control" id="decimal" placeholder="Introduzca un número decimal">
+                                <strong><div id="error_decimal" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-email">
+                                <label for="email" class="control-label">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="usuario@email.com">
+                                <strong><div id="error_email" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-dni">
+                                <label for="dni" class=" control-label">DNI</label>
+                                <input type="text" class="form-control" id="dni" placeholder="00000000G" maxlength="10">
+                                <strong><div id="error_dni" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-fecha">
+                                <label for="fecha" class=" control-label">Fecha (dd/mm/aaaa)</label>
+                                <input type="text" class="form-control" id="fecha" placeholder="27-11-2013">
+                                <strong><div id="error_fecha" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-telefono">
+                                <label for="telefono" class=" control-label">Número de teléfono</label>
+                                <input type="text" class="form-control" id="telefono" placeholder="Introduzca su número de teléfono">
+                                <strong><div id="error_telefono" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-cuenta">
+                                <label for="cuenta" class=" control-label">Número de cuenta corriente (España)</label>
+                                <input type="text" class="form-control" id="cuenta" placeholder="Introduzca su nº de CC (20 dígitos)" maxlength="23">
+                                <strong><div id="error_cuenta" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-url">
+                                <label for="url" class=" control-label">URL</label>
+                                <input type="text" class="form-control" id="url" placeholder="www.google.es">
+                                <strong><div id="error_url" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                            <div id="group-checkbox">
+                                <div class="checkbox">
+                                    <label>
+                                        <input id="checkbox"  type="checkbox">Marque esta casilla
+                                    </label>
+                                    <strong><div id="error_check" class="lead text-danger text-center"></div></strong>
+                                </div>
+                            </div>
+                            
+                            <label class="control-label">Marque una de las opciones</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="radio" id="opcionesRadios1" value="opcion1">
+                                    Opción 1
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="radio" id="opcionesRadios2" value="opcion2">
+                                    Opción 2
+                                </label>
+                            </div>
+                            <strong><div id="error_radio" class="lead text-danger text-center"></div></strong>
+
+                            <div id="group_select">
+                                <select id="select" class="form-control">
+                                    <option selected="selected">Seleccione una opción</option>
+                                    <option>Opción 1</option>
+                                    <option>Opción 2</option>
+                                    <option>Opción 3</option>
+                                    <option>Opción 4</option>
+                                </select>
+                                <strong><div id="error_select" class="lead text-danger text-center"></div></strong>
+                            </div>
+
+                        <div class="form-group text-center">
+                            <button type="submit" name="enviar" id="enviar" class="btn btn-success btn-lg">Enviar</button>
+                            <button type="reset" name="limpiar" id="limpiar" class="btn btn-danger btn-lg">Limpiar</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+    <footer class="row">
+        <h5 class=" text-center"><span >Paz Ruiz García | 2DAW | 2014/15</span></h5>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="jsb/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/eventos.js"></script>
+    <script type="text/javascript" src="js/validaciones.js"></script>
+</body>
+</html>
