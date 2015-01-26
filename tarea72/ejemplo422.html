@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="practica, dwec, javascript, DOM, validacion, iesgc, daw, web, jQuery">
+    <meta name="author" content="Paz Ruiz García">
+    <title>4.2.2 Eliminar un atributo de uno o varios elementos con removeAttr() | Paz Ruiz García</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#boton").click(function(i){
+                $("td").removeAttr("noWrap");
+            });
+        });  
+    </script>
+</head>
+<body>
+    <noscript>
+        <h1>JavaScript desactivado</h1>
+        <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+        <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+    </noscript>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 well well-lg">
+                <table width="50">
+                    <tr>
+                        <td nowrap>
+                            Esta celda tiene un nowrap, con lo que todo el texto se muestra en la misma línea!
+                            Pero realmente la tabla mide 50 pixeles de anchura, luego tendrían que aparece varias líneas!
+                        </td>
+                    </tr>
+                </table>
+                <input type="Button" id="boton" value="Quitar nowrap">
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
