@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="practica, dwec, javascript, DOM, AJAX; iesgc, daw, web, jQuery">
+    <meta name="author" content="Paz Ruiz García">
+    <title>Tarea 8.1 Mi primera comunicación AJAX | Paz Ruiz García</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript"> 
+        window.onload = function() {
+            //Cargamos el recurso solicitado cuando se pulse el botón
+            //"Mostrar saludo de bienvenida"
+            document.getElementById('enviar').onclick = descargaArchivo;
+        };
+    </script>
+ 
+</head>
+<body>
+    <noscript>
+        <h1>JavaScript desactivado</h1>
+        <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+        <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+    </noscript>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 well well-lg">
+                <form action="#">
+                    <input class="btn btn-primary btn-md" type="button" id="enviar" value="Mostrar saludo de bienvenida." />
+                </form>
+
+                <div id="principal">
+                    <h2>Contenidos del archivo:</h2>
+                    <div id="contenido"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
