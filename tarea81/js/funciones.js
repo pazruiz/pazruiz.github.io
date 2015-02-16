@@ -47,5 +47,5 @@ function muestraContenido() {
 }
  
 function descargaArchivo() {
-    cargaContenido("http://localhost/dwc/tarea81/hola.txt", "GET", muestraContenido);
+    cargaContenido("http://pazruiz.github.io/tarea81/hola.txt", "GET", muestraContenido);
 }
