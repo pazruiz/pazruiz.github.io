@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<title>Paz Ruiz | Portfolio</title>
+		<meta name="description" content="Portfolio de Paz Ruiz" />
+		<meta name="keywords" content="portfolio, Paz Ruiz, iesgc, dwc" />
+		<meta name="author" content="Paz Ruiz" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:100,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/mostrar.js"></script>
+		<script type="text/javascript" src="js/ocultar.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		
+	</head>
+	<body>
+			<div id="animacion"></div>
+		<div class="container">
+			<header class="header">
+				<h1>Paz Ruiz <span>Una manera de vivir el diseño, una forma diferente de entender la comunicación.</span></h1>
+			</header>
+			<aside class="sidebar clearfix">
+				<nav>
+					<a id="about" href="#"><i class="fa fa-fw fa-smile-o"></i>Sobre mí</a>
+					<a id="portFolio" href="#"><i class="fa fa-fw fa-heart-o"></i>Portfolio</a>
+					<a id="contact" href="#"><i class="fa fa-fw fa-comments-o"></i>Contacto</a>
+					<a id="event" href="#"><i class="fa fa-fw fa-calendar-o"></i>Talleres</a>
+				</nav>
+			</aside>
+
+			
+			<div id="aboutMe" class="aboutMe" style="display: none;">
+				<h1>Sobre mí...</h1>
+				<p>La simplicidad como forma de expresión, ya lo decía Mies Van der Rohe: <cite>"menos es más".</cite> En mis diseños tiendo a la simplicidad, me gustan los diseños limpios, con orden y claridad.</p>
+				<p>El diseño web requiere de conocimmientos multidisciplinares a los que hay que estar abiertos continuamente.</p>
+				<p>Cuando me despidieron de mi trabajo se me pasaron por la cabeza multitud de ideas y cosas por hacer.</p>
+				<p>Siempre me ha gustado el diseño y una de las cosas que más me apetecia era formarme en el desarrollo web.</p>
+				<p>Hice un pequeño curso de 3 meses en el que se me abrieron muchas posibilidades. Decidí entonces profundizar más en los conceptos del desarrollo y me matriculé en el Grado Superior de Desarrollo de Aplicaciones Web impartido por el I.E.S. "Gran Capitán" de Córdoba.</p>
+				<p>Este sitio ha sido diseñado para mostrar mis los trabajos que he ido elaborando a los largo de estos dos años.</p>
+				<span class="cerrar"></span>
+			</div>
+			<div id="portfolio" class="portfolio" style="display: none;">
+				<h1>Portfolio <span>Diseños web</span></h1>
+				<ul id="practicas">
+					<li><a href="#"><img src="img/practica06.jpg"></a></li>
+					<li><a href="#"><img src="img/practica09.jpg"></a></li>
+					<li><a href="#"><img src="img/practica10.jpg" ></a></li>
+					<li><a href="#"><img src="img/practica11.jpg" ></a></li>
+					<li><a href="#"><img src="img/practica12.jpg" ></a></li>
+					<li><a href="#"><img src="img/practica14.jpg" ></a></li>
+				</ul>
+				<span class="cerrar"></span>
+			</div>
+			<div id="contacto" class="contacto" style="display: none;">
+				<h1>Contacto</h1>
+				<p>Puedes escribirme para lo que quieras: consultas sobre diseño web, sugerencias, críticas (en lo posible se agradecen críticas constructivas), presupuestos de diseño web o simplemente para ¡saludar! </p>
+				<p>¡Estaré encantada de responderte!</p>
+				<form id="form">
+					<p><label>Nombre</label><input type="text" /></p>
+					<p><label>Email</label><input type="text" /></p>
+					<p><label>Mensaje</label><textarea></textarea></p>
+				</form>
+				<footer>
+					<nav>
+						<a href="https://plus.google.com/#"><i class="fa fa-fw fa-google-plus"></i></a>
+						<a href="https://twitter.com/PazDaw"><i class="fa fa-fw fa-twitter"></i></a>
+						<a href="https://www.facebook.com/paz.ruizgarcia.1"><i class="fa fa-fw fa-facebook"></i></a>
+						<a href="http://www.linkedin.com/pub/paz-ruiz-garc%C3%ADa/27/8ab/67"><i class="fa fa-fw fa-linkedin"></i></a>
+						<a href="http://pazruiz.github.io"><i class="fa fa-fw fa-github"></i></a>
+					</nav>
+				</footer>
+				<span class="cerrar"></span>
+			</div>
+
+			<div id="eventos" class="eventos" style="display: none;">
+				<h1>Eventos</h1>
+				<div class="event-content">
+					<!--<div class="event-columna">
+						<h2>Taller de Autocad</h2>
+						<p>AutoCAD es un programa de diseño asistido por ordenador (DAO; en inglés, Diseño asistido por computador) para dibujo en 2D y 3D. Actualmente es desarrollado y comercializado por la empresa Autodesk.</p>
+						<p>Al igual que otros programas de Diseño Asistido por Ordenador (DAO), AutoCAD gestiona una base de datos de entidades geométricas (puntos, líneas, arcos, etc) con las que se pueden operar a través de una pantalla gráfica en la que se muestran éstas, el llamado editor de dibujo. La interacción del usuario se realiza a través de comandos, de edición o dibujo, desde la línea de órdenes, a la que el programa está fundamentalmente orientado. Las versiones modernas del programa permiten la introducción de éstas mediante una interfaz gráfica de usuario o en inglés GUI, que automatiza el proceso.</p>
+						<p>Los talleres se realizan todas las semanas.Si te apetece realizar uno, propónme una fecha y me pondré en contacto contigo.</p>
+						<label for="desde">Desde</label>
+						<input type="text" id="desde" name="desde">
+						<label for="al">al</label>
+						<input type="text" id="al" name="al">
+
+					</div>
+					<div class="event-columna">
+						<h2>Taller de Revit</h2>
+						<p>Con Autodesk Revit Architecture trabajas de la misma manera en que piensas (en 3D), lo que te permite diseñar con mayor libertad y hacer modificaciones a lo largo del proyecto sin preocuparte por coordinar planos, cortes, fachadas… ¡Y en sólo unos cuantos minutos!</p>
+						<p>En el momento en que comienzas a diseñar automáticamente estás preparando los cortes, las fachadas, los detalles y, al mismo tiempo, una presentación en 3D. </p>
+						<p>Ya no tienes que dibujar pieza por pieza del proyecto; esto te ahorrará horas de trabajo pues prácticamente no tienes que dibujar nada, simplemente vas tomando elementos prefabricados que sólo hay que adecuar a las dimensiones del edificio. </p>
+					
+						<p>Los talleres se realizan todas las semanas.Si te apetece realizar uno, propónme una fecha y me pondré en contacto contigo.</p>
+						<label for="desde1">Desde</label>
+						<input type="text" id="desde1" name="desde1">
+						<label for="al1">al</label>
+						<input type="text" id="al1" name="al1">
+
+					</div>-->
+					<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Taller de Autocad</a></li>
+    <li><a href="#tabs-2">Taller de Revit</a></li>
+    <li><a href="#tabs-3">Taller de 3D Studio</a></li>
+  </ul>
+  <div id="tabs-1">
+    <h2>Taller de Autocad</h2>
+    <p>AutoCAD es un programa de diseño asistido por ordenador (DAO; en inglés, Diseño asistido por computador) para dibujo en 2D y 3D. Actualmente es desarrollado y comercializado por la empresa Autodesk.</p>
+						<p>Al igual que otros programas de Diseño Asistido por Ordenador (DAO), AutoCAD gestiona una base de datos de entidades geométricas (puntos, líneas, arcos, etc) con las que se pueden operar a través de una pantalla gráfica en la que se muestran éstas, el llamado editor de dibujo. La interacción del usuario se realiza a través de comandos, de edición o dibujo, desde la línea de órdenes, a la que el programa está fundamentalmente orientado. Las versiones modernas del programa permiten la introducción de éstas mediante una interfaz gráfica de usuario o en inglés GUI, que automatiza el proceso.</p>
+						<p>Los talleres se realizan todas las semanas.Si te apetece realizar uno, propónme una fecha y me pondré en contacto contigo.</p>
+						<label for="desde">Desde</label>
+						<input type="text" id="desde" name="desde">
+						<label for="al">al</label>
+						<input type="text" id="al" name="al">
+  </div>
+  <div id="tabs-2">
+    <h2>Taller de Revit</h2>
+    <p>Con Autodesk Revit Architecture trabajas de la misma manera en que piensas (en 3D), lo que te permite diseñar con mayor libertad y hacer modificaciones a lo largo del proyecto sin preocuparte por coordinar planos, cortes, fachadas… ¡Y en sólo unos cuantos minutos!</p>
+						<p>En el momento en que comienzas a diseñar automáticamente estás preparando los cortes, las fachadas, los detalles y, al mismo tiempo, una presentación en 3D. </p>
+						<p>Ya no tienes que dibujar pieza por pieza del proyecto; esto te ahorrará horas de trabajo pues prácticamente no tienes que dibujar nada, simplemente vas tomando elementos prefabricados que sólo hay que adecuar a las dimensiones del edificio. </p>
+					
+						<p>Los talleres se realizan todas las semanas.Si te apetece realizar uno, propónme una fecha y me pondré en contacto contigo.</p>
+						<label for="desde1">Desde</label>
+						<input type="text" id="desde1" name="desde1">
+						<label for="al1">al</label>
+						<input type="text" id="al1" name="al1">
+  </div>
+  <div id="tabs-3">
+    <h2>Taller de 3D Studio</h2>
+    <p>El software de modelado en 3D 3ds Max proporciona una solución completa de modelado, animación, simulación y renderización a los creadores de juegos, cine y gráficos de movimiento. 3ds Max ofrece nuevas herramientas eficaces, rendimiento acelerado y flujos de trabajo perfeccionados que ayudan a mejorar la productividad global para trabajar con recursos complejos de alta resolución.</p>
+
+    <p>Los talleres se realizan todas las semanas.Si te apetece realizar uno, propónme una fecha y me pondré en contacto contigo.</p>
+						<label for="desde2">Desde</label>
+						<input type="text" id="desde2" name="desde2">
+						<label for="al2">al</label>
+						<input type="text" id="al2" name="al2">
+  </div>
+</div>
+				</div>
+				
+
+				<span class="cerrar"></span>
+			</div>
+			
+		</div><!-- /container -->
+		
+	</body>
+</html>

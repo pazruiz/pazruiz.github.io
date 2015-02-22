@@ -1,0 +1,8 @@
+#fichero {
+	resize: none;
+}
+#estados {
+	height: 380px;
+	overflow: scroll;
+	overflow-x: hidden;
+}

@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="cargando ficheros con ajax inicio, practica, dwec, javascript, DOM, AJAX; iesgc, daw, web, jQuery">
+	<meta name="author" content="Paz Ruiz García">
+	<title>Tarea 8.2. Cargando ficheros del servidor | Paz Ruiz García</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+	<noscript>
+        <h1>JavaScript desactivado</h1>
+        <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+        <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+    </noscript>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+      		<div class="navbar-header">
+        		<a class="navbar-brand" href="index.html">Paz Ruiz</a>
+      		</div>
+      	</div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+    	<div class="row">
+	    	<div class="container">
+	    		<div class="jumbotron hidden-xs text-justify">
+					<h1>Cargando ficheros con AJAX</h1>
+				
+					<article>
+						<h2>Instrucciones:</h2>
+						<p>Esta página se encarga de cargar un fichero HTML obtenido mediante AJAX en el <strong>campo del formulario más abajo</strong>. Para ello, introduce en el campo de texto que hay a continuación la url <em><strong>http://pazruiz.github.io/tarea821/documento.html</strong></em> <strong>(o <em>documento.html</em>)</strong> y solicita la petición al servidor utilizando el botón <strong>"Mostrar"</strong> a continuación.</p>
+						<p>También puedes probar a acceder a <a href="index2.html">esta otra dirección (index2.html)</a>.</p>
+					</article>	
+				</div>
+			</div>
+			<main class="row">
+    			<div class="container">
+    				<section>
+						<form class="form-inline" role="form" name="formUrl" onsubmit="return false;">
+							<div class="form-group">
+    							<label class="sr-only" for="campoUrl">Introduce la URL:</label>
+								<input class="form-control" type="text" id="campoUrl" placeholder="Introduce una URL">
+								<input class="btn btn-default" type="reset" id="limpiar" value="Limpiar">
+							<button class="btn btn-default"id="enviar">Mostrar</button>
+						</form>
+					</section>
+				</div>
+			</main>
+			
+			<section class="row">
+				<div class="container">
+					<article>
+						<h3>Documento:</h3>
+						<textarea id="fichero" cols="60" rows="15" disabled></textarea>
+
+					</article>
+				</div>
+			</section>
+			<section class="row">
+				<div class="container">
+					<article>
+						<h3>Estado de la petición:</h3>
+						<div id="estados"></div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<hr>
+			<p>Paz Ruiz García - 2014/2015</p>
+		</footer>
+
+    </div>
+</body>
+</html>

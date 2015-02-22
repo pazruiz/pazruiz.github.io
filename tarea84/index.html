@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="sugerencias mediante PHP, practica, dwec, javascript, DOM, AJAX; iesgc, daw, web">
+	<meta name="author" content="Paz Ruiz García">
+	<title>Tarea 8.4. Compañeros en una base de datos | Paz Ruiz García</title>
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="js/sugerencias.js"></script>
+</head>
+<body>
+	<noscript>
+        <h1>JavaScript desactivado</h1>
+        <p>Para la correcta visualización de ésta página se requiere tener activado JavaScript.</p>
+        <p>Para activarlo, revise el panel de configuración de su navegador.</p>
+    </noscript>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+      	     <div class="navbar-header">
+        		<a class="navbar-brand" href="index.html">Paz Ruiz</a>
+      	     </div>
+      	     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		    <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Compañeros en una base de datos</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+    	<div  class="jumbotron text-justify">
+            <div id="enunciado" class"collapse">
+            	<h1>Compañeros en una base de datos</h1>
+            	<h2>Instrucciones:</h2>
+				<p>Empiece a escribir un nombre en la caja inferior. Se mostraran las coindicencias que existan en la base de datos.</p>
+            </div>
+        </div>  <!--jumbotron -->
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 well well-lg">
+                <article>
+                    <form class="form-horizontal" role="form" name="formulario" action="">
+                        <div class="form-group">
+                            <div id="group_select">
+                                <select id="select" class="form-control" onchange="mostrarSugerencias(this.value)">
+                                    <option value="">Seleccione un alumno</option>
+                                    <option value="1">Juan Pedro Adamuz</option>
+                                    <option value="2">Daniel Cabrera</option>
+                                    <option value="3">Luis Guirao</option>
+                                    <option value="4">Alejandro Gutierrez</option>
+                                    <option value="5">Daniel Gutierrez</option>
+                                    <option value="6">Antonio León</option>
+                                    <option value="7">Christopher Muñoz</option>
+                                    <option value="8">Paz Ruiz</option>
+                                    <option value="9">Pablo Sánchez</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article>
+					<h4>Información del alumno:</h4>
+					<div id="txtSugerencia">La información del alumno será listada aquí</div>
+				</article>
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        <h5 class=" text-center"><span >Paz Ruiz García | 2DAW | 2014/15</span></h5>
+    </footer>
+</body>
+</html>
